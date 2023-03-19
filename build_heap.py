@@ -38,11 +38,11 @@ def main():
         files = input()
         if "a" in files:
             return
-         with open("./tests/%s" % (files), "r") as file:
+        with open("./tests/%s" % (files), "r") as file:
             n = int(file.readline())
             data = list(map(int, file.readline().split()))
-        else:
-            return
+     else:
+        return
 
     
     assert len(data) == n
