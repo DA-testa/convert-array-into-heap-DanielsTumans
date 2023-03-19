@@ -2,7 +2,7 @@
 def build_heap(data):
     swaps = []
     n = len(data)
-    for i in range (n// 2, -1, -1, -1):
+    for i in range (n// 2 -1, -1, -1):
       while True:
          bebr = i
          left = 2 * i + 1
