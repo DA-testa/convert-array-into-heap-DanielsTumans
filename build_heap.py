@@ -7,9 +7,9 @@ def build_heap(data):
          bebr = i
          left = 2 * i + 1
          right = 2 * i + 2
-         if left < n and data[bebr] > data[left]:
+         if left < n and data[left] < data[bebr]:
             bebr = left
-         if right < n and data[bebr] < data[right]:
+         if right < n and data[right] < data[bebr]:
             bebr = right
          if i!=bebr:
             swaps.append((i, bebr))
