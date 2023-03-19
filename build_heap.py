@@ -1,8 +1,8 @@
-#phyton3
+# phyton3
 def build_heap(data):
     swaps = []
     n = len(data)
-    for i in range (n// 2 -1 -1 -1):
+    for i in range (n// 2, -1, -1, -1):
       while True:
          bebr = i
          left = 2 * i + 1
@@ -18,17 +18,6 @@ def build_heap(data):
          else:
             break
     return swaps        
-            
-            
-            
-            
-            
-
-
-
-    
-
-
 def main():
     bebroni = input()
     if "I" in bebroni:
@@ -47,17 +36,10 @@ def main():
     
     assert len(data) == n
     swaps = build_heap(data)
-   
-    
-
-   
-
-
-    
+ 
     print(len(swaps))
     for i, j in swaps:
         print(i, j)
 
-
 if __name__ == "__main__":
-   main()
+    main()
