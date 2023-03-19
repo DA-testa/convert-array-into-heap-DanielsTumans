@@ -17,7 +17,7 @@ def build_heap(data):
             i = bebr       
          else:
             break
-      return swaps        
+    return swaps        
             
             
             
