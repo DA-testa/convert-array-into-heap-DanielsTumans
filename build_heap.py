@@ -36,10 +36,13 @@ def main():
         
     elif "F" in bebroni:
         files = input()
-        
-         with open(f"tests/{files}") as filek:
-            n = int(filek.readline())
-            data = list(map(int, filek.readline().split()))
+        if "a" in files:
+            return
+         with open("./tests/%s" % (files), "r") as file:
+            n = int(file.readline())
+            data = list(map(int, file.readline().split()))
+        else:
+            return
 
     
     assert len(data) == n
