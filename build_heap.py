@@ -32,7 +32,7 @@ def main():
     bebroni = input()
     if "F" in bebroni:
         files = input()
-        if "a" in file:
+        if "a" in files:
             return
         with open("./tests/"+files, mode="r") as file:
             n = int(file.readline())
