@@ -41,8 +41,8 @@ def main():
         with open("./tests/%s" % (files), "r") as file:
             n = int(file.readline())
             data = list(map(int, file.readline().split()))
-     else:
-        return
+    else:
+       return
 
     
     assert len(data) == n
