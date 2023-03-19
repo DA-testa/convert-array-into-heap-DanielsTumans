@@ -37,7 +37,7 @@ def main():
     elif "F" in bebroni:
         files = input()
         
-         with open(f"tests/{fn}") as filek:
+         with open(f"tests/{files}") as filek:
             n = int(filek.readline())
             data = list(map(int, filek.readline().split()))
 
