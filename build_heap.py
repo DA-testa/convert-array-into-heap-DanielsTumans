@@ -37,11 +37,10 @@ def main():
         
     elif "F" in bebroni:
         files = input()
-        if "a" in files:
-            return
-        with open("./tests/%s" % (files), "r") as file:
-            n = int(file.readline())
-            data = list(map(int, file.readline().split()))
+        
+        with open(f"tests/{files}") as f:
+            n = int(f.readline())
+            data = list(map(int, f.readline().split()))
     else:
        return
 
