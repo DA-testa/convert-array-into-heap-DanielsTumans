@@ -41,11 +41,11 @@ def main():
         n = int(input())
         data = list(map(int, input().split()))
 
-    
+    swaps = build_heap(data)
     assert len(data) == n
 
    
-    swaps = build_heap(data)
+    
 
    
 
