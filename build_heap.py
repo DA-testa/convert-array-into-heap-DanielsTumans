@@ -30,20 +30,20 @@ def build_heap(data):
 
 def main():
     bebroni = input()
-    if "F" in bebroni:
-        files = input()
-        if "a" in files:
-            return
-        with open("./tests/"+files, mode="r") as file:
-            n = int(file.readline())
-            data = list(map(int, file.readline().split()))
-    elif "I" in bebroni:
+    if "I" in bebroni:
         n = int(input())
         data = list(map(int, input().split()))
+        
+    elif "F" in bebroni:
+        files = input()
+        
+         with open(f"tests/{fn}") as filek:
+            n = int(filek.readline())
+            data = list(map(int, filek.readline().split()))
 
-    swaps = build_heap(data)
+    
     assert len(data) == n
-
+    swaps = build_heap(data)
    
     
 
